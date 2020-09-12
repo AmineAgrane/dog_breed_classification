@@ -36,13 +36,20 @@ A good place to read about this type of function is the [TensorFlow documentatio
 
 Dealing with 10,000+ images may take up more memory than your GPU has. Trying to compute on them all would result in an error. So it's more efficient to create smaller batches of your data and compute on one batch at a time.
 
-
-# mobilenet_v2_130_224 Model
+# Creating and training the Neural Network 
+## mobilenet_v2_130_224 Model
 
 In this project, we're using the **`mobilenet_v2_130_224`** model from TensorFlow Hub.
 https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html
 MobileNetV2 is a significant improvement over MobileNetV1 and pushes the state of the art for mobile visual recognition including classification, object detection and semantic segmentation. MobileNetV2 is released as part of TensorFlow-Slim Image Classification Library, or you can start exploring MobileNetV2 right away in Colaboratory. Alternately, you can download the notebook and explore it locally using Jupyter. MobileNetV2 is also available as modules on TF-Hub, and pretrained checkpoints can be found on github.
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/mobilnetv2.png">
+
+## Setting up the model layers
+
+The first layer we use is the model from TensorFlow Hub (`hub.KerasLayer(MODEL_URL)`. This **input layer** takes in our images and finds patterns in them based on the patterns [`mobilenet_v2_130_224`](https://tfhub.dev/google/imagenet/mobilenet_v2_130_224/classification/4) has found.
+
+The next layer (`tf.keras.layers.Dense()`) is the **output layer** of our model. It brings all of the information discovered in the input layer together and outputs it in the shape we're after, 120 (the number of unique labels we have). The `activation="softmax"` parameter tells the output layer, we'd like to assign a probability value to each of the 120 labels [somewhere between 0 & 1](https://en.wikipedia.org/wiki/Softmax_function). The higher the value, the more the model believes the input image should have that label. 
+
 
 # Performances and results
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png">
