@@ -52,8 +52,12 @@ The next layer (`tf.keras.layers.Dense()`) is the **output layer** of our model.
 
 
 # Performances and results
+## Confusion Matrix
+The following confusion matrix is the result of using our model to classify the validation dataset images. The model have been trained on 9000 images, and the validation dataset have 1000 images.
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png">
 
+## Predicted Label/Breed and probability distribution
+Another way to analyse the inference of our model is to print out the predicted class on an image and it's probability distribution. For each image, we show it's original label (left), it's predicted label (right), and the probabilty assossiated with the predicted label (how much confident is our Neural Network about the predicted class).
 # Improve the model
 How to approuve model accuracy :
 1. [Trying another model from TensorFlow Hub](https://tfhub.dev/) - A different model could perform better on our dataset. 
