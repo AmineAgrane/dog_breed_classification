@@ -20,7 +20,7 @@ We're going to go through the following workflow:
 
 For preprocessing our data, we're going to use TensorFlow 2.x. The whole premise here is to get our data into Tensors (arrays of numbers which can be run on GPUs) and then allow a machine learning model to find patterns between them. For our machine learning model, we're gonna do some **transfer learning** and we're going to use a pretrained deep learning model from TensorFlow Hub. We'll use the **`mobilenet_v2_130_224`** model.
 
-<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/mobilnetv2.png" width="900" height="250">
+<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/mobilnetv2.png">
 
 
-<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png" width="900" height="250">
+<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png">
