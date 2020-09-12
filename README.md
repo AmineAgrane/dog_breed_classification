@@ -22,5 +22,5 @@ For preprocessing our data, we're going to use TensorFlow 2.x. The whole premise
 
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/mobilnetv2.png">
 
-
+Confusion Matrix on the valid DataSet : ~1000 images 
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png">
