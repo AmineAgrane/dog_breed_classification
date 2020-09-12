@@ -2,5 +2,5 @@
 This project is a multi-class image classification.  We'll use TensorFlow to build and train a Neural Network that will classify dog breed from images.
 
 
-<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/predicted_labels.png" width="1090" height="330">
+<img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/predicted_labels.png" width="900" height="250">
 Predicted labels by our trained model.
