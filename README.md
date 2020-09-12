@@ -12,7 +12,7 @@ To do this, we'll be using data from the [Kaggle dog breed identification compet
 We're going to go through the following workflow:
 
 1. Get data ready (download from Kaggle, store, import).
-2. Prepare the data (preprocessing, the 3 sets, X & y).
+2. Prepare the data (Turn into tensors & batches, train & valid & test sets)
 3. Choose and fit/train a model ([TensorFlow Hub](https://www.tensorflow.org/hub), `tf.keras.applications`, [TensorBoard](https://www.tensorflow.org/tensorboard), [EarlyStopping](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping)).
 4. Evalaute the model a model (making predictions, comparing them with the ground truth labels).
 5. Improve the model through experimentation 
