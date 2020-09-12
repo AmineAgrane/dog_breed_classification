@@ -20,7 +20,25 @@ We're going to go through the following workflow:
 
 For preprocessing our data, we're going to use TensorFlow 2.x. The whole premise here is to get our data into Tensors (arrays of numbers which can be run on GPUs) and then allow a machine learning model to find patterns between them. For our machine learning model, we're gonna do some **transfer learning** and we're going to use a pretrained deep learning model from TensorFlow Hub. 
 
+# Getting Data ready
+## Preprocessing images (Turning images to Tensors)
+
+To preprocess our images into Tensors we're going to :
+1. Uses TensorFlow to read the file and save it to a variable, `image`.
+2. Turn our `image` (a jpeg file) into Tensors.
+3. Normalize image (from 0-255 to 0-1)
+4. Resize the `image` to be of shape (224, 224).
+5. Return the modified `image`.
+
+A good place to read about this type of function is the [TensorFlow documentation on loading images](https://www.tensorflow.org/tutorials/load_data/images). 
+
+## Creating data batches
+
+Dealing with 10,000+ images may take up more memory than your GPU has. Trying to compute on them all would result in an error. So it's more efficient to create smaller batches of your data and compute on one batch at a time.
+
+
 # mobilenet_v2_130_224 Model
+
 In this project, we're using the **`mobilenet_v2_130_224`** model from TensorFlow Hub.
 https://ai.googleblog.com/2018/04/mobilenetv2-next-generation-of-on.html
 MobileNetV2 is a significant improvement over MobileNetV1 and pushes the state of the art for mobile visual recognition including classification, object detection and semantic segmentation. MobileNetV2 is released as part of TensorFlow-Slim Image Classification Library, or you can start exploring MobileNetV2 right away in Colaboratory. Alternately, you can download the notebook and explore it locally using Jupyter. MobileNetV2 is also available as modules on TF-Hub, and pretrained checkpoints can be found on github.
