@@ -28,3 +28,9 @@ MobileNetV2 is a significant improvement over MobileNetV1 and pushes the state o
 
 # Performances and results
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/conf_matrix_valid_data.png">
+
+# Improve the model
+How to approuve model accuracy :
+1. [Trying another model from TensorFlow Hub](https://tfhub.dev/) - A different model could perform better on our dataset. 
+2. [Data augmentation](https://bair.berkeley.edu/blog/2019/06/07/data_aug/) - Take the training images and manipulate (crop, resize) or distort them (flip, rotate) to create even more training data for the model to learn from. 
+3. [Fine-tuning](https://www.tensorflow.org/hub/tf2_saved_model#fine-tuning)
