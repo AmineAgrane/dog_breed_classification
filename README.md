@@ -8,7 +8,7 @@ Yon can see below some predictions made by the final trained model on some test 
 
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/predicted_labels3.png">
 
-# Classify Different Dog Breeds  🐶
+# Classify Different Dog Breeds 
 
 To do this, we'll be using data from the [Kaggle dog breed identification competition](https://www.kaggle.com/c/dog-breed-identification/overview). It consists of a collection of 10,000+ labelled images of 120 different dog breeds.
 
