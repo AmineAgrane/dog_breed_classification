@@ -2,7 +2,7 @@
 This project is a multi-class image classification.  I have used TensorFlow [`mobilenet_v2_130_224`](https://tfhub.dev/google/imagenet/mobilenet_v2_130_224/classification/4) to build and train a Neural Network that will classify dog breed from images passed as input.
 
 
-**Yon can see below some predictions made by the final model :**
+**You can see below some predictions made by the final model :**
 
 <img src="https://github.com/AmineAgrane/dog_breed_classification/blob/master/docs/predicted_labels.png">
 
